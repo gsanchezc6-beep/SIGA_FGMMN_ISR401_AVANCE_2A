@@ -1,0 +1,68 @@
+# ============================================================
+# SIGA — Nombre_Proyecto_ISR401 — .gitignore
+# NUNCA agregar aquí: 02_Evidencias/, 03_Modelado/, 04_Trazabilidad/,
+# 05_MVP/, 06_Experimento/resultados/, 07_Publicacion/dataset_zenodo/
+# Esas carpetas son evidencia obligatoria y deben quedar versionadas.
+# ============================================================
+
+# ---- Sistema operativo ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editores / IDE ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- LaTeX: residuos de compilación (01_ERS/) ----
+# El .tex y el .pdf final SÍ se versionan; solo se ignoran los intermedios.
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+
+# ---- MVP (05_MVP/, si el código fuente vive en este mismo repo) ----
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.local
+venv/
+.venv/
+dist/
+build/
+*.log
+docker-compose.override.yml
+
+# ---- Scripts de análisis (06_Experimento/scripts_analisis/) ----
+.ipynb_checkpoints/
+*.Rhistory
+*.RData
+
+# ---- Archivos temporales de oficina ----
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# ---- Credenciales — NUNCA subir al repositorio ----
+*.pem
+*.key
+secrets.*
+osf_token.txt
+zenodo_token.txt
+.netrc
