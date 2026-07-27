@@ -1,0 +1,70 @@
+@startuml istar_sd
+title Diagrama i* de Dependencia Estratégica (SD) · SIGA
+
+skinparam backgroundColor white
+skinparam ArrowColor #444444
+skinparam circle {
+  BackgroundColor #FFF3CD
+  BorderColor #444444
+  FontStyle bold
+}
+skinparam cloud {
+  BackgroundColor #D6EAF8
+  BorderColor #2E86AB
+}
+skinparam usecase {
+  BackgroundColor #E8DAEF
+  BorderColor #7D3C98
+}
+skinparam rectangle {
+  BackgroundColor #D5F5E3
+  BorderColor #1D6B36
+}
+skinparam card {
+  BackgroundColor #FADBD8
+  BorderColor #943126
+}
+
+' ===== Actores (círculos) =====
+circle "Docente" as Docente
+circle "Personal de\nInfraestructura y\nMantenimiento" as Infra
+circle "SIGA" as SIGA
+circle "Autoridades de\nla Facultad" as Autoridades
+circle "Personal de TI" as TI
+
+' ===== Dependencias (dependum) =====
+usecase "Clima y equipos\noperativos" as G1
+rectangle "Estado del aula\nen tiempo real" as R1
+rectangle "Datos de sensores\nen tiempo real" as R2
+cloud "Reducir consumo\nenergético" as SG1
+card "Gestionar accesos\ny roles" as T1
+card "Recibir alertas\nautomáticas" as T2
+
+' ===== Enlaces de dependencia (depender ..> dependum ..> dependee) =====
+Docente ..> G1 : depende de
+G1 ..> Infra
+
+Docente ..> R1 : depende de
+R1 ..> SIGA
+
+Infra ..> R2 : depende de
+R2 ..> SIGA
+
+Infra ..> T2 : depende de
+T2 ..> SIGA
+
+Autoridades ..> SG1 : depende de
+SG1 ..> SIGA
+
+TI ..> T1 : depende de
+T1 ..> SIGA
+
+legend right
+  |= Forma |= Tipo de dependencia (i*) |
+  | Óvalo (usecase) | Meta (Goal) |
+  | Rectángulo | Recurso (Resource) |
+  | Nube | Softgoal |
+  | Card | Tarea (Task) |
+endlegend
+
+@enduml

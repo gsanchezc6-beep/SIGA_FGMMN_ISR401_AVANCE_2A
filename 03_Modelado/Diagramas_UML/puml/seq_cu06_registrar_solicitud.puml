@@ -1,0 +1,35 @@
+@startuml seq_cu06_registrar_solicitud
+title CU-06 · Registrar solicitud de mantenimiento
+
+actor "Docente" as Docente
+participant "SIGA\n(API REST)" as SIGA
+database "Base de Datos" as BD
+participant "BitacoraAccion" as Bitacora
+
+Docente -> SIGA : abrirModuloMantenimiento()
+activate SIGA
+SIGA --> Docente : mostrarFormulario()
+
+Docente -> SIGA : enviarSolicitud(aula, equipo, tipoIncidencia,\nprioridad, descripcion)
+SIGA -> SIGA : validarCampos()
+
+alt campos válidos
+    SIGA -> BD : guardarTicket(datosTicket)
+    activate BD
+    BD --> SIGA : id_ticket
+    deactivate BD
+    SIGA -> Bitacora : registrar(usuario, accion="crear_ticket", resultado="OK")
+    SIGA --> Docente : confirmacion(id_ticket, estado="Registrada")
+else campos incompletos
+    SIGA --> Docente : errorValidacion(camposFaltantes)
+end
+
+deactivate SIGA
+
+note right of SIGA
+  Si la incidencia ya tiene una alerta activa
+  (CU-04), el sistema permite asociar el
+  ticket a la alerta existente (flujo A3).
+end note
+
+@enduml

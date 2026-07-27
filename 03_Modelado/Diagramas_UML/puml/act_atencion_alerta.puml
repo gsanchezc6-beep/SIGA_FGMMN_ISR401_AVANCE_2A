@@ -1,0 +1,28 @@
+@startuml act_atencion_alerta
+title Flujo de actividad · Atención de alerta (CU-04 → CU-05)
+
+start
+:Sensor detecta lectura anómala;
+:Sistema evalúa la regla configurada;
+
+if (¿Supera el umbral definido?) then (sí)
+    :Sistema clasifica prioridad de la alerta;
+    :Sistema genera y registra la alerta;
+    :Sistema notifica al responsable;
+    :Responsable revisa la alerta en el panel;
+    :Responsable cambia el estado a "En proceso";
+
+    if (¿Requiere mantenimiento físico?) then (sí)
+        :Responsable genera ticket asociado (CU-06);
+    else (no)
+        :Responsable cierra la alerta con justificación;
+    endif
+
+    :Sistema registra la atención en bitácora;
+else (no)
+    :Sistema no genera alerta;
+endif
+
+stop
+
+@enduml

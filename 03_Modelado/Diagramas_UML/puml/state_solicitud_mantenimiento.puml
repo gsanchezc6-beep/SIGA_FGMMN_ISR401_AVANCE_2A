@@ -1,0 +1,26 @@
+@startuml state_solicitud_mantenimiento
+title Diagrama de estados · SolicitudMantenimiento
+
+[*] --> Registrada : crearTicket()
+
+Registrada --> EnProceso : asignarResponsable()
+
+EnProceso --> Resuelta : cerrarConAccionRegistrada()
+EnProceso --> Cancelada : cancelarConJustificacion()
+
+Resuelta --> EnProceso : reabrirConJustificacion()\n[flujo alterno A2 de CU-07]
+
+Resuelta --> [*]
+Cancelada --> [*]
+
+state Registrada {
+  [*] --> PendienteAsignacion
+}
+
+state EnProceso {
+  [*] --> EnAtencion
+  EnAtencion --> EnEspera : esperaRepuesto()
+  EnEspera --> EnAtencion : repuestoDisponible()
+}
+
+@enduml
