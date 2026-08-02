@@ -14,6 +14,13 @@
 \end{longtable}
 \endgroup
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.35\textwidth]{figuras/Firma_GS.png}
+\caption{Firma del analista líder --- Sánchez Cornejo Gary Alberto}
+\label{fig:firma-analista-lider}
+\end{figure}
+
 \section*{REGISTRO DE CORRECCIONES INCORPORADAS - ENTREGA 2 (1B) $\rightarrow$ ENTREGA 3 (2A)}
 
 \addcontentsline{toc}{section}{REGISTRO DE CORRECCIONES INCORPORADAS - ENTREGA 2 (1B) $\rightarrow$ ENTREGA 3 (2A)}
@@ -123,7 +130,7 @@ Para atender esta problemática se propone el desarrollo de un Sistema Inteligen
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img001.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/System Context Diagram of the Intelligent Classroom Management System (SIGA).png}
 \caption{Diagrama de contexto}
 \label{fig:img1}
 \end{figure}
@@ -346,22 +353,22 @@ DEP-09 & Suministro eléctrico & El funcionamiento de sensores, gateways y plata
 Nuevo en esta entrega. El lenguaje i* (distributed intentionality, Yu, 1995) modela la intencionalidad de los actores organizacionales mediante dos vistas complementarias: el Diagrama de Dependencia Estratégica (SD) y el Diagrama de Razón Estratégica (SR).
 
 
-Diagrama de Dependencia Estratégica (SD) --- especificación para elaborar en piStar (https://www.cin.ufpe.br/\textasciitilde{}jhcp/piStar/): el actor ``Docente'' depende del actor ``Personal de Infraestructura y Mantenimiento'' para obtener ``clima y equipos operativos''; ``Personal de Infraestructura y Mantenimiento'' depende de ``SIGA'' para el recurso ``datos de sensores en tiempo real''; ``Autoridades de la Facultad'' dependen de ``SIGA'' para el softgoal ``reducir consumo energético''; ``Personal de TI'' depende de ``SIGA'' para la tarea ``gestionar accesos y roles''.
+Diagrama de Dependencia Estratégica (SD) --- elaborado en draw.io (https://www.drawio.com/), con etiquetas en inglés conforme a lo indicado por el docente responsable: el actor ``Docente'' depende del actor ``Personal de Infraestructura y Mantenimiento'' para obtener ``clima y equipos operativos''; ``Personal de Infraestructura y Mantenimiento'' depende de ``SIGA'' para el recurso ``datos de sensores en tiempo real''; ``Autoridades de la Facultad'' dependen de ``SIGA'' para el softgoal ``reducir consumo energético''; ``Personal de TI'' depende de ``SIGA'' para la tarea ``gestionar accesos y roles''.
 
 
-Diagrama de Razón Estratégica (SR) para el actor ``Personal de Infraestructura y Mantenimiento'' --- especificación: el softgoal ``reducir tiempo de respuesta a fallas'' se descompone en las tareas ``consultar panel de control'' (RF-07), ``recibir alertas automáticas'' (RF-08) y ``registrar mantenimiento'' (RF-12), cada una soportada por un RF del sistema SIGA.
+Diagrama de Razón Estratégica (SR) para el actor ``Personal de Infraestructura y Mantenimiento'' --- elaborado en draw.io: el softgoal ``reducir tiempo de respuesta a fallas'' se descompone en las tareas ``consultar panel de control'' (RF-07), ``recibir alertas automáticas'' (RF-08) y ``registrar mantenimiento'' (RF-12), cada una soportada por un RF del sistema SIGA.
 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img002.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/istar_SD.drawio.png}
 \caption{Diagrama i* de Dependencia Estratégica (SD)}
 \label{fig:img2}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img003.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/iStar_SR.drawio.png}
 \caption{Diagrama i* de Razón Estratégica (SR) --- Departamento de Infraestructura y Mantenimiento}
 \label{fig:img3}
 \end{figure}
@@ -386,7 +393,7 @@ La plataforma contará con una interfaz web accesible desde navegadores modernos
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img004.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/Mockups SIGA - Panel.png}
 \caption{Mockup MU-01: Panel de control centralizado}
 \label{fig:img4}
 \end{figure}
@@ -396,7 +403,7 @@ El panel de control centralizado permitirá visualizar el estado general de las 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img005.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/Mockups SIGA - Alertas.png}
 \caption{Mockup MU-02: Vista de alertas}
 \label{fig:img5}
 \end{figure}
@@ -406,7 +413,7 @@ La vista de alertas permitirá consultar identificador, aula afectada, tipo de a
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img006.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/Mockups SIGA - Mantenimiento.png}
 \caption{Mockup MU-03: Módulo de mantenimiento}
 \label{fig:img6}
 \end{figure}
@@ -416,7 +423,7 @@ El módulo de mantenimiento permitirá registrar solicitudes y dar seguimiento a
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img007.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/Mockups SIGA - Reportes.png}
 \caption{Mockup MU-04: Reportes administrativos}
 \label{fig:img7}
 \end{figure}
@@ -870,30 +877,31 @@ Criterio de verificación & Solicitud de corrección de prueba sobre un campo de
 
 \addcontentsline{toc}{subsection}{3.3 Requisitos no funcionales cuantificables (ISO/IEC 25010:2023)}
 
-Se presentan 15 Requisitos No Funcionales (RNF-01 a RNF-15), cubriendo las nueve características de calidad de ISO/IEC 25010:2023. Los seis primeros provienen de la Entrega 1B; RNF-07 a RNF-15 son borradores iniciales redactados para esta entrega y deben confirmarse o ajustarse con los datos que arrojen las entrevistas de la Sección 3 (RNF) del guion general --- no se presentan como resultado final validado.
+Se presentan 16 Requisitos No Funcionales (RNF-01 a RNF-16), cubriendo las nueve características de calidad de ISO/IEC 25010:2023. Los seis primeros (RNF-01 a RNF-06) provienen de la Entrega 1B y mantienen su estatus validado de esa entrega. RNF-07 a RNF-15 se redactaron en esta entrega y se cruzaron contra las 11 transcripciones de campo disponibles (EV-01, EV-02, EV-08 a EV-16); el resultado de ese cruce, sin ambigüedad, se declara en la columna ``Estado de validación'' de la Tabla 39. RNF-16 es nuevo en esta entrega, sustentado directamente en evidencia de campo (EV-15).
 
 
 \begingroup
 \small
-\begin{longtable}{|p{3.9cm}|p{3.9cm}|p{3.9cm}|p{3.9cm}|}
+\begin{longtable}{|p{2.6cm}|p{5.4cm}|p{2.4cm}|p{2.6cm}|p{2.9cm}|}
 \hline
-ID & Descripción cuantificada & Característica ISO 25010 & Criterio de verificación \\ \hline
-NFR-01 & El sistema debe entregar alertas de anomalía en $\leq$60 s desde la detección. & Eficiencia de desempeño & Prueba de carga con 50 aulas simuladas; medición del tiempo real de entrega. \\ \hline
-NFR-02 & Disponibilidad $\geq$99 \% mensual (downtime $\leq$7,3 h/mes). & Fiabilidad & Monitoreo de uptime durante 30 días continuos. \\ \hline
-NFR-03 & Datos en tránsito y reposo cifrados con AES-256; acceso sin credenciales rechazado en el 100 \% de los casos. & Seguridad & Auditoría de cifrado + intento de acceso sin credenciales rechazado en todos los casos. \\ \hline
-NFR-04 & Usuario sin capacitación previa completa 'consultar estado de un aula' en $\leq$2 min. & Interacción de usuario & Prueba de usabilidad con $\geq$3 usuarios reales, medición del tiempo de tarea. \\ \hline
-NFR-05 & La interfaz debe funcionar sin instalación adicional en Chrome, Firefox y Edge, en resoluciones de 360px a 1920px. & Portabilidad / Compatibilidad & Prueba cruzada en 3 navegadores y 2 tamaños de pantalla. \\ \hline
-NFR-06 & Cobertura de pruebas unitarias $\geq$70 \% en módulos críticos (alertas y control remoto). & Mantenibilidad & Reporte de cobertura generado por la herramienta de testing del proyecto. \\ \hline
-NFR-07 & Adecuación funcional: el módulo de detección de ocupación debe mantener una tasa de acierto $\geq$95 \% frente al estado real observado, medida sobre una muestra de auditoría mensual. & Adecuación funcional & Auditoría manual mensual de una muestra de aulas comparando estado del sistema vs. observación directa. \\ \hline
-NFR-08 & Compatibilidad: la integración con el Sistema de Horario Académico debe completarse sin pérdida de datos en el 100 \% de las sincronizaciones, verificado mediante checksum de los registros importados. & Compatibilidad & Prueba de sincronización con conjunto de datos de horario de prueba; verificación de integridad por checksum. \\ \hline
-NFR-09 & Flexibilidad: incorporar un nuevo tipo de sensor IoT al sistema no debe requerir más de 8 horas-persona de esfuerzo de desarrollo, sin modificar el núcleo de la plataforma. & Flexibilidad & Ejercicio de integración de un sensor ficticio adicional, medición del esfuerzo real invertido. \\ \hline
-NFR-10 & Explicabilidad: el módulo de análisis predictivo (RF-09) debe presentar la explicación de cada predicción de falla en $\leq$2 s, con $\leq$60 palabras, y el usuario técnico debe reportar comprenderla con calificación media $\geq$4/5 en escala Likert de 1 a 5. & Interacción de usuario (explicabilidad, taxonomía de Chazette y Schneider, 2020) & Prueba con $\geq$6 participantes (3 técnicos, 3 no técnicos) en dos rondas de validación; medición de tiempo de respuesta y encuesta de comprensión. \\ \hline
-NFR-11 & Derecho de acceso (Art. 13 LOPDP): el sistema debe permitir exportar los datos personales de un usuario en $\leq$15 días hábiles desde la solicitud (soporta RF-24). & Seguridad / Cumplimiento legal & Solicitud de prueba registrada y medición del tiempo hasta la disponibilidad del archivo exportado. \\ \hline
-NFR-12 & El sistema debe generar una alerta automática al administrador ante un intento de acceso no autorizado detectado, en $\leq$5 minutos desde el evento. & Seguridad & Simulación de intento de acceso no autorizado; medición del tiempo hasta la alerta generada. \\ \hline
-NFR-13 & Fiabilidad: ante una caída del Gateway IoT de un aula, el sistema debe reanudar la recepción de datos en $\leq$5 minutos tras el restablecimiento de la conexión, sin pérdida de lecturas posteriores al reinicio. & Fiabilidad & Prueba de corte y restablecimiento de conexión controlado sobre un gateway de prueba. \\ \hline
-NFR-14 & Mantenibilidad: el tiempo medio de diagnóstico de una falla reportada por el sistema (desde la alerta hasta la identificación de la causa) no debe superar los 15 minutos para el personal de TI. & Mantenibilidad & Registro de tiempos de diagnóstico durante el periodo de prueba del MVP. \\ \hline
-NFR-15 & Portabilidad: la interfaz web debe ser completamente operativa (sin pérdida de funciones críticas) en conexiones con ancho de banda reducido, de al menos 1 Mbps. & Portabilidad & Prueba de acceso a la plataforma bajo throttling de red simulado a 1 Mbps. \\ \hline
-\caption{Requisitos no funcionales cuantificados (ISO/IEC 25010:2023)}
+ID & Descripción cuantificada & Característica ISO 25010 & Criterio de verificación & Estado de validación \\ \hline
+NFR-01 & El sistema debe entregar alertas de anomalía en $\leq$60 s desde la detección. & Eficiencia de desempeño & Prueba de carga con 50 aulas simuladas; medición del tiempo real de entrega. & Validado en 1B \\ \hline
+NFR-02 & Disponibilidad $\geq$99 \% mensual (downtime $\leq$7,3 h/mes). & Fiabilidad & Monitoreo de uptime durante 30 días continuos. & Validado en 1B \\ \hline
+NFR-03 & Datos en tránsito y reposo cifrados con AES-256; acceso sin credenciales rechazado en el 100 \% de los casos. & Seguridad & Auditoría de cifrado + intento de acceso sin credenciales rechazado en todos los casos. & Validado en 1B \\ \hline
+NFR-04 & Usuario sin capacitación previa completa 'consultar estado de un aula' en $\leq$2 min. & Interacción de usuario & Prueba de usabilidad con $\geq$3 usuarios reales, medición del tiempo de tarea. & Validado en 1B \\ \hline
+NFR-05 & La interfaz debe funcionar sin instalación adicional en Chrome, Firefox y Edge, en resoluciones de 360px a 1920px. & Portabilidad / Compatibilidad & Prueba cruzada en 3 navegadores y 2 tamaños de pantalla. & Validado en 1B \\ \hline
+NFR-06 & Cobertura de pruebas unitarias $\geq$70 \% en módulos críticos (alertas y control remoto). & Mantenibilidad & Reporte de cobertura generado por la herramienta de testing del proyecto. & Validado en 1B \\ \hline
+NFR-07 & Adecuación funcional: el módulo de detección de ocupación debe mantener una tasa de acierto $\geq$95 \% frente al estado real observado, medida sobre una muestra de auditoría mensual. & Adecuación funcional & Auditoría manual mensual de una muestra de aulas comparando estado del sistema vs. observación directa. & \textbf{No verificado} --- ningún participante discutió tasas de acierto de sensores \\ \hline
+NFR-08 & Compatibilidad: la integración con el Sistema de Horario Académico debe completarse sin pérdida de datos en el 100 \% de las sincronizaciones, verificado mediante checksum de los registros importados. & Compatibilidad & Prueba de sincronización con conjunto de datos de horario de prueba; verificación de integridad por checksum. & \textbf{Parcialmente sustentado} --- COORD-02 (EV-10) confirma que el cruce de horarios es hoy 100 \% manual (dos ventanas de pantalla comparadas a mano); el umbral del 100 \% de integridad vía checksum no fue verificado \\ \hline
+NFR-09 & Flexibilidad: incorporar un nuevo tipo de sensor IoT al sistema no debe requerir más de 8 horas-persona de esfuerzo de desarrollo, sin modificar el núcleo de la plataforma. & Flexibilidad & Ejercicio de integración de un sensor ficticio adicional, medición del esfuerzo real invertido. & \textbf{No verificado} --- ningún participante es perfil técnico de desarrollo; umbral requiere prueba de ingeniería directa, no entrevista de campo \\ \hline
+NFR-10 & Explicabilidad: el módulo de análisis predictivo (RF-09) debe presentar la explicación de cada predicción de falla en $\leq$2 s, con $\leq$60 palabras, y el usuario técnico debe reportar comprenderla con calificación media $\geq$4/5 en escala Likert de 1 a 5. & Interacción de usuario (explicabilidad, taxonomía de Chazette y Schneider, 2020) & Prueba con $\geq$6 participantes (3 técnicos, 3 no técnicos) en dos rondas de validación; medición de tiempo de respuesta y encuesta de comprensión. & \textbf{No verificado} --- estudio dedicado de explicabilidad (Sección 3.3.1) no ejecutado en esta entrega \\ \hline
+NFR-11 & Derecho de acceso (Art. 13 LOPDP): el sistema debe permitir exportar los datos personales de un usuario en $\leq$15 días hábiles desde la solicitud (soporta RF-24). & Seguridad / Cumplimiento legal & Solicitud de prueba registrada y medición del tiempo hasta la disponibilidad del archivo exportado. & Fundamentado normativamente (LOPDP Art. 13); no requiere validación de campo \\ \hline
+NFR-12 & El sistema debe generar una alerta automática al administrador ante un intento de acceso no autorizado detectado, en $\leq$5 minutos desde el evento. & Seguridad & Simulación de intento de acceso no autorizado; medición del tiempo hasta la alerta generada. & \textbf{No verificado} --- requiere prueba técnica de seguridad, no evidencia de entrevista \\ \hline
+NFR-13 & Fiabilidad: ante una caída temporal del Gateway IoT de un aula con conectividad normalmente disponible, el sistema debe reanudar la recepción de datos en $\leq$5 minutos tras el restablecimiento de la conexión, sin pérdida de lecturas posteriores al reinicio. & Fiabilidad & Prueba de corte y restablecimiento de conexión controlado sobre un gateway de prueba. & \textbf{No verificado}; alcance acotado explícitamente a pérdida temporal --- el escenario de ausencia total de conectividad se traslada a RNF-16 (ver EV-15) \\ \hline
+NFR-14 & Mantenibilidad: el tiempo medio de diagnóstico de una falla reportada por el sistema (desde la alerta hasta la identificación de la causa) no debe superar los 15 minutos para el personal de TI. & Mantenibilidad & Registro de tiempos de diagnóstico durante el periodo de prueba del MVP. & \textbf{Parcialmente sustentado} --- DOC-01 (EV-12) reporta 15-30 min de clase perdida por falla no resuelta bajo el proceso actual; confirma el problema, no valida el umbral con el sistema implementado \\ \hline
+NFR-15 & Portabilidad: la interfaz web debe ser completamente operativa (sin pérdida de funciones críticas) en conexiones con ancho de banda reducido, de al menos 1 Mbps. & Portabilidad & Prueba de acceso a la plataforma bajo throttling de red simulado a 1 Mbps. & \textbf{No verificado}; alcance acotado explícitamente a banda reducida pero presente --- el escenario de ausencia total se traslada a RNF-16 \\ \hline
+NFR-16 & Disponibilidad en modo degradado sin conectividad: el sistema debe notificar explícitamente al usuario cuando un aula no tiene conectividad de red disponible, en lugar de fallar silenciosamente o mostrar datos obsoletos sin advertencia. & Fiabilidad & Prueba de desconexión total de red en un aula piloto; verificación de que el sistema muestra un aviso explícito de falta de conectividad al usuario. & \textbf{Sustentado en evidencia de campo} --- DOC-03 (EV-15) declaró explícitamente que no hay internet en la mayoría de las aulas de la Facultad; RNF-16 formaliza esta necesidad. Umbral de tiempo de respuesta del aviso no cuantificado en esta entrega \\ \hline
+\caption{Requisitos no funcionales cuantificados (ISO/IEC 25010:2023), con estado de validación explícito}
 \end{longtable}
 \endgroup
 
@@ -901,14 +909,22 @@ NFR-15 & Portabilidad: la interfaz web debe ser completamente operativa (sin pé
 
 \addcontentsline{toc}{subsubsection}{3.3.1 Requisito de explicabilidad para RF-09 (obligatorio)}
 
-El componente de análisis predictivo de fallas (RF-09) es el único módulo basado en IA/ML del sistema. Conforme al marco de Chazette y Schneider (2020) y Chazette et al. (2021, 2022), se identifica: (1) usuarios afectados que requieren explicación --- Personal de Infraestructura y Mantenimiento, Personal de TI; (2) tipo de explicación requerida --- explicación causal (qué variables de sensor motivaron la predicción); (3) momento de la explicación --- al generarse la alerta predictiva (CU-16). Este requisito queda formalizado como RNF-10 en la Tabla 39, y debe validarse con $\geq$6 participantes (3 técnicos, 3 no técnicos) en dos rondas, según el gatekeeper G7 de la guía de evaluación.
+El componente de análisis predictivo de fallas (RF-09) es el único módulo basado en IA/ML del sistema. Conforme al marco de Chazette y Schneider (2020) y Chazette et al. (2021, 2022), se identifica: (1) usuarios afectados que requieren explicación --- Personal de Infraestructura y Mantenimiento, Personal de TI; (2) tipo de explicación requerida --- explicación causal (qué variables de sensor motivaron la predicción); (3) momento de la explicación --- al generarse la alerta predictiva (CU-16). Este requisito queda formalizado como RNF-10 en la Tabla 39. El estudio de validación con $\geq$6 participantes descrito en el criterio de verificación no se ejecutó en esta entrega; RNF-10 se declara explícitamente como no verificado (ver Tabla 39).
 
+
+\subsubsection*{3.3.2 Método del cruce de RNF-07 a RNF-16 contra la evidencia de campo}
+
+\addcontentsline{toc}{subsubsection}{3.3.2 Método del cruce de RNF-07 a RNF-16 contra la evidencia de campo}
+
+Se revisaron las 11 transcripciones de campo (EV-01, EV-02, EV-08 a EV-16) en busca de confirmación directa de los nueve umbrales cuantitativos originalmente declarados en RNF-07 a RNF-15. Ninguno fue mencionado, discutido o confirmado explícitamente por algún participante, ya que el guion de entrevista aplicado no incluyó preguntas dirigidas a validar estos umbrales específicos. El estado resultante de cada RNF, sin excepción, queda declarado explícitamente en la columna ``Estado de validación'' de la Tabla 39: ningún RNF queda en un estado ambiguo o pendiente de definir. Dos hallazgos cualitativos reales sí permitieron acciones concretas en esta misma entrega: (1) la evidencia de DOC-03 (EV-15) sobre ausencia total de conectividad se formalizó como el nuevo RNF-16; (2) la evidencia de COORD-02 (EV-10) sobre el proceso manual de cruce de horarios se incorporó como sustento parcial de NFR-08. Para la Entrega 4 (2B) se recomienda incorporar preguntas de validación dirigidas a los umbrales aún no verificados (NFR-07, 09, 10, 12, 13, 15).
 
 \subsection*{3.4 Requisitos legales (Ley Orgánica de Protección de Datos Personales del Ecuador)}
 
 \addcontentsline{toc}{subsection}{3.4 Requisitos legales (Ley Orgánica de Protección de Datos Personales del Ecuador)}
 
 Nuevo en esta entrega. El SIGA trata datos personales de sus usuarios (perfil, credenciales, bitácora de acciones) y, de forma complementaria, imágenes de las cámaras de videovigilancia existentes (RF-06). Por ello, se mapea explícitamente cada obligación legal relevante de la Ley Orgánica de Protección de Datos Personales del Ecuador (Registro Oficial Suplemento No. 459, 2021) al RF/RNF que la operacionaliza.
+
+
 
 
 \begingroup
@@ -920,9 +936,9 @@ Art. 7 (Tratamiento legítimo) & El tratamiento de datos requiere consentimiento
 Art. 13 (Derecho de acceso) & El titular puede solicitar acceso a sus datos personales, respuesta en $\leq$15 días. & RF-24, RNF-11 & Función de exportación de datos personales del usuario. \\ \hline
 Art. 14 (Rectificación) & El titular puede solicitar corrección de datos inexactos, $\leq$15 días. & RF-25 & Función de edición de perfil con registro de auditoría en bitácora. \\ \hline
 Protección de datos desde el diseño & Medidas técnicas y organizativas desde el diseño del sistema. & NFR-03, RD-10 & Cifrado AES-256 y control de acceso por roles definidos desde la arquitectura. \\ \hline
-Notificación de vulneraciones de seguridad & Deber de notificar ante brechas de seguridad detectadas. & RNF-12 & Alerta automática al administrador ante acceso no autorizado. \\ \hline
-Deber de demostrar cumplimiento & El responsable debe poder demostrar las medidas administrativas y técnicas aplicadas. & RF-23 & Bitácora de acciones de usuario como mecanismo de auditoría ante la Autoridad de Protección de Datos. \\ \hline
-Imagen como dato personal (cámaras) & La imagen que identifica a una persona es dato personal. & RD-05, RF-03, RF-06 & SIGA procesa el video de la cámara únicamente para determinar presencia/ocupación de forma agregada (verdadero/falso), cruzado con el Horario Académico como referencia pero con prioridad del estado real detectado; no almacena el video ni los fotogramas, y no realiza reconocimiento facial ni identificación de personas. \\ \hline
+Notificación de vulneraciones de seguridad (Art. 43, Art. 46) & Deber de notificar a la Autoridad de Protección de Datos dentro de 5 días (Art. 43) y al titular dentro de 3 días (Art. 46) ante brechas de seguridad detectadas. & RNF-12 & Alerta automática al administrador ante acceso no autorizado, con registro de fecha/hora que permite cumplir los plazos de notificación exigidos por los Art. 43 y 46. \\ \hline
+Deber de demostrar cumplimiento (Art. 10 lit. k, Art. 47 num. 2) & Principio de responsabilidad proactiva y demostrada (Art. 10-k): el responsable debe poder demostrar en cualquier momento las medidas administrativas y técnicas aplicadas (Art. 47-2). & RF-23 & Bitácora de acciones de usuario como mecanismo de auditoría ante la Autoridad de Protección de Datos. \\ \hline
+Imagen como dato personal / dato biométrico (Art. 4, Art. 26) & La imagen que identifica a una persona es dato personal; el Art. 4 define dato biométrico como aquel que permite o confirma la identificación única de una persona natural. & RD-05, RF-03, RF-06 & SIGA procesa el video de la cámara únicamente para determinar presencia/ocupación de forma agregada (verdadero/falso), cruzado con el Horario Académico como referencia pero con prioridad del estado real detectado; no almacena el video ni los fotogramas, y no realiza reconocimiento facial ni identificación única de personas. En consecuencia, la imagen procesada por SIGA \textbf{no constituye dato biométrico} en los términos del Art. 4, por lo que no aplica el régimen reforzado de datos sensibles del Art. 26 --- esto sustenta formalmente la clasificación del proyecto en Categoría B de riesgo ético. \\ \hline
 \caption{Trazabilidad Ley $\rightarrow$ Artículo $\rightarrow$ RF/RNF}
 \end{longtable}
 \endgroup
@@ -953,7 +969,7 @@ RD-11 & Normativa & Las acciones realizadas por los usuarios deberán registrars
 RD-12 & Operativa & La instalación, configuración y mantenimiento físico de sensores, gateways y controladores dependerá del Departamento de Infraestructura y Mantenimiento, en coordinación con TI. & El sistema requiere intervención física en aulas y laboratorios, por lo que no puede desplegarse sin autorización y acompañamiento del personal responsable. & RF-01, RF-03, RF-04, RF-05, RF-22 \\ \hline
 RD-13 & Operativa & El sistema dependerá de la disponibilidad del horario académico en formato digital o estructurado para ejecutar reglas automáticas de encendido, apagado y detección fuera de horario. & Las funciones de automatización energética requieren conocer cuándo un aula debería estar ocupada o desocupada. & RF-13, RF-15, RF-16, RF-21 \\ \hline
 RD-14 & Temporal & Para la Entrega 3 (2A), el sistema documentará una ERS/SRS completa con requisitos ampliados, modelado UML completo, MVP funcional y componente empírico registrado. & La Entrega 2 (1B) definió la base documental parcial; esta entrega cierra los elementos pendientes identificados y agrega el instrumental empírico hacia la publicación. & Todos los RF, RNF y restricciones \\ \hline
-RD-15 & Temporal & Para la Entrega 4 (2B) se completará el manuscrito de publicación, el dataset FAIR en Zenodo y el cierre de la evidencia de campo hasta 24 participantes. & La entrega actual (2A) produce los datos empíricos que la Entrega 4 analizará y reportará en el manuscrito paralelo. & RF-01 a RF-25, RNF-01 a RNF-15 \\ \hline
+RD-15 & Temporal & Para la Entrega 4 (2B) se completará el manuscrito de publicación, el dataset FAIR en Zenodo y el cierre de la evidencia de campo hasta 24 participantes. & La entrega actual (2A) produce los datos empíricos que la Entrega 4 analizará y reportará en el manuscrito paralelo. & RF-01 a RF-25, RNF-01 a RNF-16 \\ \hline
 RD-16 & Alcance & El sistema no gestionará matrícula, asistencia, calificaciones ni asignación oficial de horarios académicos. & Estas funciones pertenecen a sistemas académicos institucionales y no forman parte del alcance operativo del Sistema Inteligente de Gestión de Aulas. & RF-13, RF-15, RF-16 \\ \hline
 RD-17 & Alcance & El sistema no realizará mantenimiento físico de equipos ni reparaciones directas; únicamente registrará, notificará y dará seguimiento a incidencias. & Las acciones correctivas físicas seguirán siendo responsabilidad del personal de Infraestructura, Mantenimiento o proveedores externos autorizados. & RF-08, RF-10, RF-11, RF-12 \\ \hline
 RD-18 & Alcance & El sistema no controlará la red eléctrica general del campus ni dispositivos no integrados técnicamente con la solución IoT. & El alcance se limita a aulas, sensores, gateways, controladores y equipos compatibles definidos para el proyecto. & RF-02, RF-04, RF-05, RF-13, RF-16 \\ \hline
@@ -1148,7 +1164,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema registro
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img008.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/usecase_general.png}
 \caption{Diagrama de caso de uso general}
 \label{fig:img8}
 \end{figure}
@@ -1444,7 +1460,7 @@ El diagrama de clases parte del modelo conceptual de la Entrega 1B (16 clases: A
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img009.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/class_diagram_refined.png}
 \caption{Diagrama de clases refinado}
 \label{fig:img9}
 \end{figure}
@@ -1470,21 +1486,21 @@ Nuevo en esta entrega. Se especifican para los casos de uso críticos:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img010.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC04_generate_anomaly_alerts.png}
 \caption{Diagrama de secuencia --- CU-04 Generar alertas por anomalías}
 \label{fig:img10}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img011.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC06_register_maintenance_request.png}
 \caption{Diagrama de secuencia --- CU-06 Registrar solicitud de mantenimiento}
 \label{fig:img11}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img012.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC16_predict_equipment_failures.png}
 \caption{Diagrama de secuencia --- CU-16 Predecir fallas de equipos (RF-09, explicabilidad RNF-10)}
 \label{fig:img12}
 \end{figure}
@@ -1501,14 +1517,14 @@ Nuevo en esta entrega. Se especifican para los casos de uso críticos:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img013.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC05_attend_anomaly_alert.png}
 \caption{Diagrama de actividad --- Atención de alerta (CU-04 $\rightarrow$ CU-05)}
 \label{fig:img13}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img014.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC07_track_maintenance_ticket.png}
 \caption{Diagrama de actividad --- Ticket de mantenimiento (CU-06 $\rightarrow$ CU-07)}
 \label{fig:img14}
 \end{figure}
@@ -1522,7 +1538,7 @@ Nuevo en esta entrega. Se especifican para los casos de uso críticos:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img015.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/state_maintenance_request.png}
 \caption{Diagrama de estados --- SolicitudMantenimiento}
 \label{fig:img15}
 \end{figure}
@@ -1536,7 +1552,7 @@ Nuevo en esta entrega. Se especifican para los casos de uso críticos:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img016.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/component_diagram.png}
 \caption{Diagrama de componentes --- SIGA}
 \label{fig:img16}
 \end{figure}
@@ -1550,9 +1566,252 @@ Nuevo en esta entrega. Se especifican para los casos de uso críticos:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/img017.png}
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/deployment_diagram.png}
 \caption{Diagrama de despliegue --- SIGA}
 \label{fig:img17}
+\end{figure}
+
+\subsection*{4.9 Diagramas de secuencia y actividad complementarios (CU-01 a CU-16)}
+
+\addcontentsline{toc}{subsection}{4.9 Diagramas de secuencia y actividad complementarios (CU-01 a CU-16)}
+
+Se presentan a continuación los diagramas de secuencia y de actividad individuales para los 16 casos de uso, elaborados en Visual Paradigm (archivo fuente editable \texttt{.vpp} conservado en el repositorio, conforme a la decisión del equipo de no exportar a XMI). Los diagramas de CU-04 y CU-06 ya presentados en las secciones 4.5/4.6 como flujo narrativo se incluyen aquí también en su forma gráfica completa para mantener consistencia con el resto del conjunto.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC01_monitor_room_status.png}
+\caption{Diagrama de secuencia --- CU-01 Monitorear estado de aula en tiempo real}
+\label{fig:seq-cu01}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC02_remote_equipment_control.png}
+\caption{Diagrama de secuencia --- CU-02 Controlar remotamente equipos de aula}
+\label{fig:seq-cu02}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC03_detect_room_occupancy.png}
+\caption{Diagrama de secuencia --- CU-03 Detectar ocupación de aula}
+\label{fig:seq-cu03}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC04_generate_anomaly_alerts.png}
+\caption{Diagrama de secuencia --- CU-04 Generar alertas por anomalías}
+\label{fig:seq-cu04}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC05_attend_anomaly_alert.png}
+\caption{Diagrama de secuencia --- CU-05 Atender alerta de anomalía}
+\label{fig:seq-cu05}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC06_register_maintenance_request.png}
+\caption{Diagrama de secuencia --- CU-06 Registrar solicitud de mantenimiento}
+\label{fig:seq-cu06}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC07_track_maintenance_ticket.png}
+\caption{Diagrama de secuencia --- CU-07 Dar seguimiento a ticket de mantenimiento}
+\label{fig:seq-cu07}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC08_view_failure_maintenance_history.png}
+\caption{Diagrama de secuencia --- CU-08 Consultar historial de fallas y mantenimientos}
+\label{fig:seq-cu08}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC09_generate_administrative_reports.png}
+\caption{Diagrama de secuencia --- CU-09 Generar reportes administrativos}
+\label{fig:seq-cu09}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC10_export_reports.png}
+\caption{Diagrama de secuencia --- CU-10 Exportar reportes PDF y Excel}
+\label{fig:seq-cu10}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC11_manage_users_roles_permissions.png}
+\caption{Diagrama de secuencia --- CU-11 Gestionar usuarios, roles y permisos}
+\label{fig:seq-cu11}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC12_monitor_iot_connectivity.png}
+\caption{Diagrama de secuencia --- CU-12 Monitorear conectividad IoT}
+\label{fig:seq-cu12}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC13_schedule_automatic_onoff_rules.png}
+\caption{Diagrama de secuencia --- CU-13 Programar reglas de encendido y apagado}
+\label{fig:seq-cu13}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC14_log_user_actions.png}
+\caption{Diagrama de secuencia --- CU-14 Registrar bitácora de acciones}
+\label{fig:seq-cu14}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC15_view_room_cameras.png}
+\caption{Diagrama de secuencia --- CU-15 Consultar cámaras asociadas al aula}
+\label{fig:seq-cu15}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/seq_UC16_predict_equipment_failures.png}
+\caption{Diagrama de secuencia --- CU-16 Predecir fallas de equipos}
+\label{fig:seq-cu16}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC01_monitor_room_status.png}
+\caption{Diagrama de actividad --- CU-01 Monitorear estado de aula en tiempo real}
+\label{fig:act-cu01}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC02_remote_equipment_control.png}
+\caption{Diagrama de actividad --- CU-02 Controlar remotamente equipos de aula}
+\label{fig:act-cu02}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC03_detect_room_occupancy.png}
+\caption{Diagrama de actividad --- CU-03 Detectar ocupación de aula}
+\label{fig:act-cu03}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC04_generate_anomaly_alerts.png}
+\caption{Diagrama de actividad --- CU-04 Generar alertas por anomalías}
+\label{fig:act-cu04}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC05_attend_anomaly_alert.png}
+\caption{Diagrama de actividad --- CU-05 Atender alerta de anomalía}
+\label{fig:act-cu05}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC06_register_maintenance_request.png}
+\caption{Diagrama de actividad --- CU-06 Registrar solicitud de mantenimiento}
+\label{fig:act-cu06}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC07_track_maintenance_ticket.png}
+\caption{Diagrama de actividad --- CU-07 Dar seguimiento a ticket de mantenimiento}
+\label{fig:act-cu07}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC08_view_failure_maintenance_history.png}
+\caption{Diagrama de actividad --- CU-08 Consultar historial de fallas y mantenimientos}
+\label{fig:act-cu08}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC09_generate_administrative_reports.png}
+\caption{Diagrama de actividad --- CU-09 Generar reportes administrativos}
+\label{fig:act-cu09}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC10_export_reports.png}
+\caption{Diagrama de actividad --- CU-10 Exportar reportes PDF y Excel}
+\label{fig:act-cu10}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC11_manage_users_roles_permissions.png}
+\caption{Diagrama de actividad --- CU-11 Gestionar usuarios, roles y permisos}
+\label{fig:act-cu11}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC12_monitor_iot_connectivity.png}
+\caption{Diagrama de actividad --- CU-12 Monitorear conectividad IoT}
+\label{fig:act-cu12}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC13_schedule_automatic_onoff_rules.png}
+\caption{Diagrama de actividad --- CU-13 Programar reglas de encendido y apagado}
+\label{fig:act-cu13}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC14_log_user_actions.png}
+\caption{Diagrama de actividad --- CU-14 Registrar bitácora de acciones}
+\label{fig:act-cu14}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC15_view_room_cameras.png}
+\caption{Diagrama de actividad --- CU-15 Consultar cámaras asociadas al aula}
+\label{fig:act-cu15}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/act_UC16_predict_equipment_failures.png}
+\caption{Diagrama de actividad --- CU-16 Predecir fallas de equipos}
+\label{fig:act-cu16}
+\end{figure}
+
+\subsection*{4.10 Diagrama de estados --- Alerta}
+
+\addcontentsline{toc}{subsection}{4.10 Diagrama de estados --- Alerta}
+
+\textit{Entidad seleccionada: \textit{Alerta}, segundo ciclo de vida no trivial del dominio. Estados: Generada $\rightarrow$ Notificada $\rightarrow$ \{Atendida | Escalada\}. Transiciones: Generada $\rightarrow$ Notificada (envío automático al responsable); Notificada $\rightarrow$ Atendida (registro de acción del responsable); Notificada $\rightarrow$ Escalada (sin atención dentro del umbral de tiempo definido en RNF-01); Escalada $\rightarrow$ Atendida (intervención de autoridad).}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{figuras/state_alert.png}
+\caption{Diagrama de estados --- Alerta}
+\label{fig:state-alerta}
 \end{figure}
 
 \section*{V. PRIORIZACIÓN Y TRAZABILIDAD EXTENDIDA}
@@ -1640,7 +1899,7 @@ Integración con el sistema de matrícula y asistencia, control de la red eléct
 
 \addcontentsline{toc}{subsection}{5.3 Modelo de Kano}
 
-Nuevo en esta entrega. La clasificación Kano de cada RF requiere el par de preguntas funcional/disfuncional aplicado en el cuestionario de estudiantes (Sección C del instrumento ``cuestionario\_estudiantes\_v2.0'') y en las entrevistas de Coordinadores/Conserjes. La tabla siguiente deja preparada la estructura con los RF candidatos; la columna ``Clasificación Kano'' se completa una vez procesadas las respuestas --- no se reporta un resultado aquí para evitar declarar una clasificación sin el sustento estadístico correspondiente (regla anti-fabricación de la guía, gatekeeper G4).
+Nuevo en esta entrega. El cuestionario de estudiantes v2.0 (EV-17, $n=27$--$30$ según pregunta) incluyó únicamente 3 pares genuinos de preguntas funcional/disfuncional (P23-24, P25-26, P27-28), aplicados a RF-05, RF-07 y RF-08. RF-09 y RF-12 no contaron con instrumento Kano en el cuestionario efectivamente aplicado, por lo que se reportan como no clasificados en esta entrega --- no se fabrica una clasificación sin el sustento estadístico correspondiente (regla anti-fabricación de la guía, gatekeeper G4). Los resultados obtenidos, usando la tabla de evaluación Kano estándar, son los siguientes:
 
 
 \begingroup
@@ -1648,14 +1907,16 @@ Nuevo en esta entrega. La clasificación Kano de cada RF requiere el par de preg
 \begin{longtable}{|p{3.9cm}|p{3.9cm}|p{3.9cm}|p{3.9cm}|}
 \hline
 ID-RF & Nombre & Clasificación Kano & Fuente de datos \\ \hline
-RF-08 & Generación y envío de alertas & En proceso de recolección (cuestionario) & Cuestionario estudiantes P11/P12, entrevista general \\ \hline
-RF-07 & Panel de control centralizado & En proceso de recolección (cuestionario) & Cuestionario estudiantes P7/P8 \\ \hline
-RF-05 & Ajuste remoto de climatización & En proceso de recolección (cuestionario) & Cuestionario estudiantes P17/P18 \\ \hline
-RF-12 & Gestión de solicitudes de mantenimiento & En proceso de recolección (cuestionario) & Entrevista Coordinadores/Conserjes, Sección 5 \\ \hline
-RF-09 & Análisis predictivo de fallos (IA) & En proceso de recolección (cuestionario) & Cuestionario estudiantes P8/P9 (explicabilidad) \\ \hline
-\caption{Estructura de clasificación Kano}
+RF-05 & Ajuste remoto de climatización & Indiferente (37\%, categoría dominante clara) & Cuestionario estudiantes P23/P24 (EV-17, $n=27$--$30$) \\ \hline
+RF-08 & Generación y envío de alertas & Sin categoría dominante --- empate a tres bandas (Must-be = One-dimensional = Indiferente, 8 respuestas c/u) & Cuestionario estudiantes P25/P26 (EV-17) \\ \hline
+RF-07 & Panel de control centralizado & Sin categoría dominante --- empate a dos bandas (One-dimensional = Attractive, 9 respuestas c/u) & Cuestionario estudiantes P27/P28 (EV-17) \\ \hline
+RF-09 & Análisis predictivo de fallos (IA) & Sin clasificar --- no se incluyó par funcional/disfuncional en el instrumento aplicado & N/A \\ \hline
+RF-12 & Gestión de solicitudes de mantenimiento & Sin clasificar --- no se incluyó par funcional/disfuncional en el instrumento aplicado & N/A \\ \hline
+\caption{Clasificación Kano --- resultados reales del cuestionario EV-17}
 \end{longtable}
 \endgroup
+
+Se declara como limitación honesta que, salvo RF-05, los resultados Kano no arrojan una categoría dominante clara con el tamaño de muestra actual (RF-07 y RF-08 presentan empates entre bandas). Esto no invalida el instrumento, pero indica que la clasificación de RF-07 y RF-08 debe tratarse como preliminar y ampliarse con mayor muestra en la Entrega 4 (2B) antes de usarla como criterio único de priorización.
 
 \subsection*{5.4 Valor de negocio - WSJF (Weighted Shortest Job First)}
 
@@ -1705,26 +1966,26 @@ ID-EV & Evidencia (fuente) & ID Req. & Nombre del requisito & Caso(s) de uso \\ 
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-01 & Recopilación datos ambientales (sensores IoT) & CU-01, CU-03 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-02 & Monitoreo y control remoto de dispositivos & CU-02 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-03 & Detección automática de ocupación & CU-03 \\ \hline
-EV-01, EV-02, EV-03 & Infraestructura (14/05) + Docente (30/06) + Estudiantes (01/07) & RF-04 & Monitoreo y control remoto de proyectores & CU-01, CU-02 \\ \hline
+EV-01, EV-02, EV-03 & Infraestructura (14/05) + Coordinación (30/06) + Estudiantes (01/07) & RF-04 & Monitoreo y control remoto de proyectores & CU-01, CU-02 \\ \hline
 EV-01, EV-03 & Infraestructura (14/05) + Estudiantes (01/07) & RF-05 & Monitoreo y ajuste remoto de climatización & CU-01, CU-02 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-06 & Integración con el sistema de videovigilancia & CU-15 \\ \hline
-EV-01, EV-02, EV-03 & Infraestructura (14/05) + Docente (30/06) + Estudiantes (01/07) & RF-07 & Panel de control centralizado & CU-01 \\ \hline
+EV-01, EV-02, EV-03 & Infraestructura (14/05) + Coordinación (30/06) + Estudiantes (01/07) & RF-07 & Panel de control centralizado & CU-01 \\ \hline
 EV-01, EV-03 & Infraestructura (14/05) + Estudiantes (01/07) & RF-08 & Generación y envío de alertas por anomalías & CU-04, CU-05 \\ \hline
-EV-02 & Docente de la Facultad 30/06/2026 & RF-09 & Análisis predictivo de fallos mediante IA & CU-16 \\ \hline
+EV-02 & Coordinación de la Carrera 30/06/2026 & RF-09 & Análisis predictivo de fallos mediante IA & CU-16 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-10 & Registro histórico de fallas y mantenimientos & CU-08 \\ \hline
-EV-02, EV-03 & Docente (30/06) + Estudiantes (01/07) & RF-11 & Notificación inmediata ante fallas críticas & CU-04, CU-05 \\ \hline
-EV-01, EV-02, EV-03 & Infraestructura (14/05) + Docente (30/06) + Estudiantes (01/07) & RF-12 & Gestión de solicitudes de mantenimiento & CU-06, CU-07 \\ \hline
+EV-02, EV-03 & Coordinación (30/06) + Estudiantes (01/07) & RF-11 & Notificación inmediata ante fallas críticas & CU-04, CU-05 \\ \hline
+EV-01, EV-02, EV-03 & Infraestructura (14/05) + Coordinación (30/06) + Estudiantes (01/07) & RF-12 & Gestión de solicitudes de mantenimiento & CU-06, CU-07 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-13 & Control automático de apagado energético & CU-13 \\ \hline
-EV-02 & Docente de la Facultad 30/06/2026 & RF-14 & Análisis de patrones de consumo energético & CU-16 \\ \hline
+EV-02 & Coordinación de la Carrera 30/06/2026 & RF-14 & Análisis de patrones de consumo energético & CU-16 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-15 & Programación de horarios automatizados & CU-13 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-16 & Apagado automático por aula desocupada & CU-03, CU-13 \\ \hline
-EV-02 & Docente de la Facultad 30/06/2026 & RF-17 & Generación de reportes estadísticos periódicos & CU-09 \\ \hline
-EV-02 & Docente de la Facultad 30/06/2026 & RF-18 & Exportación de reportes PDF/Excel & CU-10 \\ \hline
-EV-02 & Docente de la Facultad 30/06/2026 & RF-19 & Gestión de acceso diferenciado por roles & CU-11 \\ \hline
-EV-02 & Docente de la Facultad 30/06/2026 & RF-20 & Registro del historial de ocupación & CU-01, CU-08 \\ \hline
+EV-02 & Coordinación de la Carrera 30/06/2026 & RF-17 & Generación de reportes estadísticos periódicos & CU-09 \\ \hline
+EV-02 & Coordinación de la Carrera 30/06/2026 & RF-18 & Exportación de reportes PDF/Excel & CU-10 \\ \hline
+EV-02 & Coordinación de la Carrera 30/06/2026 & RF-19 & Gestión de acceso diferenciado por roles & CU-11 \\ \hline
+EV-02 & Coordinación de la Carrera 30/06/2026 & RF-20 & Registro del historial de ocupación & CU-01, CU-08 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-21 & Notificación equipos encendidos fuera de horario & CU-04, CU-13 \\ \hline
 EV-01 & Personal de Infraestructura 14/05/2026 & RF-22 & Monitoreo de conectividad de red IoT & CU-12 \\ \hline
-EV-01, EV-02 & Infraestructura (14/05) + Docente (30/06) & RF-23 & Registro de bitácora de acciones de usuario & CU-14 \\ \hline
+EV-01, EV-02 & Infraestructura (14/05) + Coordinación (30/06) & RF-23 & Registro de bitácora de acciones de usuario & CU-14 \\ \hline
 EV-03 & Estudiantes de la Carrera de Software, 01/07/2026 & RF-04, RF-05, RF-07, RF-08, RF-11, RF-12, RF-22 & Validación complementaria mediante cuestionario digital aplicado a estudiantes & CU-01, CU-02, CU-04, CU-05, CU-06, CU-07, CU-12 \\ \hline
 EV-04 & Fotografías de las sesiones EV-01 y EV-02 & RF-01 a RF-05, RF-07, RF-08 & Evidencia fotográfica del trabajo de campo, entrevistas y contexto físico observado & CU-01, CU-02, CU-03, CU-04 \\ \hline
 EV-05 & Documento institucional: horario académico vigente & RF-13, RF-15, RF-16, RF-20, RF-21; RD-13 & Horario académico vigente & CU-03, CU-09, CU-13 \\ \hline
@@ -1780,7 +2041,7 @@ Nuevo en esta entrega. El protocolo completo debe registrarse en OSF (https://os
 
 \addcontentsline{toc}{subsection}{7.1 Enfoque elegido y preguntas de investigación (PICOC)}
 
-Enfoque 1: comparación de la calidad de los Requisitos Funcionales elicitados por el equipo humano frente a los generados por un Modelo Grande de Lenguaje (LLM) a partir del mismo material fuente (transcripciones EV-01 y EV-02).
+Enfoque 1: comparación de la calidad de los Requisitos Funcionales elicitados por el equipo humano frente a los generados por un Modelo Grande de Lenguaje (LLM) a partir del mismo material fuente: el corpus completo y anonimizado de las 11 entrevistas de campo (EV-01, EV-02, EV-08 a EV-16).
 
 
 \begingroup
@@ -1788,14 +2049,16 @@ Enfoque 1: comparación de la calidad de los Requisitos Funcionales elicitados p
 \begin{longtable}{|p{7.8cm}|p{7.8cm}|}
 \hline
 Formato PICOC & Formato PICOC \\ \hline
-Población & Requisitos funcionales del dominio SIGA (gestión inteligente de aulas). \\ \hline
-Intervención & Generación de RF mediante un LLM (GPT-4o o Claude) a partir de la transcripción anonimizada de EV-01/EV-02. \\ \hline
+Población & Requisitos funcionales del dominio SIGA (26 generados por LLM, 25 elicitados por el equipo humano). \\ \hline
+Intervención & Elicitación asistida por modelo de lenguaje grande (Claude Sonnet 5, interfaz de chat), a partir del corpus completo de las 11 entrevistas anonimizadas (EV-01, EV-02, EV-08 a EV-16). \\ \hline
 Comparación & RF elicitados por el equipo humano (Sección 3.2) a partir del mismo material fuente. \\ \hline
-Resultado & Diferencias en completitud, no ambigüedad, verificabilidad, corrección y consistencia. \\ \hline
+Resultado & Diferencias en completitud, no ambigüedad, verificabilidad, corrección y consistencia, evaluadas por 3 jueces ciegos. \\ \hline
 Contexto & Sistema real universitario ecuatoriano, proyecto de Ingeniería de Requerimientos de pregrado. \\ \hline
 \caption{Formato PICOC}
 \end{longtable}
 \endgroup
+
+Se declara como limitación de validez de constructo que el modelo utilizado para generar el Conjunto A tuvo exposición previa parcial al Conjunto B (RF humanos) en sesiones de chat anteriores dentro de la misma cuenta, por lo que no constituye una instancia ``ingenua'' en el sentido estricto de un diseño experimental limpio (detalle completo en \texttt{06\_Experimento/prompts\_llm/prompt\_llm\_conjunto\_A.md}).
 
 RQ1: ¿En qué dimensiones de calidad los RF elicitados por el equipo humano difieren de los generados por un LLM a partir del mismo material fuente?
 
@@ -1818,7 +2081,7 @@ Prueba de normalidad Shapiro-Wilk; prueba t para muestras apareadas (o Wilcoxon 
 
 \addcontentsline{toc}{subsection}{7.4 Registro OSF}
 
-Conforme a indicación expresa del docente responsable, el registro formal en OSF no se realiza para esta entrega. El protocolo completo, los instrumentos de recolección y la rúbrica de evaluación experta permanecen disponibles públicamente en el repositorio del proyecto para fines de transparencia y reproducibilidad.
+Conforme a indicación expresa del docente responsable, el protocolo del componente empírico se registra y publica en OSF (Open Science Framework) para esta entrega. Debido a que la recolección de las 11 entrevistas de campo fue anterior a la creación formal del registro OSF, existe una desviación respecto al orden ideal de un preregistro (registrar antes de recolectar cualquier dato); el docente responsable indicó expresamente que esta desviación se documenta y se ajusta en la evaluación del gatekeeper G6, sin que ello invalide el registro. El proyecto OSF se encuentra actualmente en proceso de revisión institucional; el DOI/URL definitivo se incorpora a este documento y al README del repositorio una vez aprobado. El protocolo completo, los instrumentos de recolección y la rúbrica de evaluación experta permanecen disponibles públicamente en el repositorio del proyecto para fines de transparencia y reproducibilidad.
 
 
 \section*{VIII. CONCLUSIONES}
@@ -1828,10 +2091,10 @@ Conforme a indicación expresa del docente responsable, el registro formal en OS
 La Entrega 3 (2A) del Proyecto Fin de Curso consolida y amplía la especificación parcial construida en la Entrega 2 (1B) del Sistema Inteligente de Gestión de Aulas (SIGA), siguiendo la estructura del estándar IEEE/ISO/IEC 29148:2018 y elevando el estándar de exigencia hacia una ERS/SRS completa con componente empírico.
 
 
-Los principales logros de esta entrega son: la ampliación de 23 a 25 requisitos funcionales con plantilla de 8 atributos; la especificación de 15 requisitos no funcionales cuantificados sobre las nueve características de ISO/IEC 25010:2023, incluido el requisito de explicabilidad obligatorio para RF-09; la incorporación de una sección de requisitos legales mapeados a la Ley Orgánica de Protección de Datos Personales del Ecuador; la redacción de historias de usuario en formato Connextra con criterios Gherkin para los RF Must; el modelado UML completo con ocho tipos de diagrama y el modelado organizacional i*; la priorización combinada MoSCoW, Kano y WSJF; la ampliación de la matriz de trazabilidad; y la definición del alcance del Producto Mínimo Viable y del protocolo del componente empírico.
+Los principales logros de esta entrega son: la ampliación de 23 a 25 requisitos funcionales con plantilla de 8 atributos; la especificación de 16 requisitos no funcionales cuantificados sobre las nueve características de ISO/IEC 25010:2023, con estado de validación declarado explícitamente para cada uno (validado, parcialmente sustentado o no verificado, sin ambigüedad), incluido el requisito de explicabilidad obligatorio para RF-09; la incorporación de una sección de requisitos legales mapeados a la Ley Orgánica de Protección de Datos Personales del Ecuador; la redacción de historias de usuario en formato Connextra con criterios Gherkin para los RF Must; el modelado UML completo con ocho tipos de diagrama y el modelado organizacional i*; la priorización combinada MoSCoW, Kano y WSJF; la ampliación de la matriz de trazabilidad; y la definición del alcance del Producto Mínimo Viable y del protocolo del componente empírico.
 
 
-Como trabajo pendiente hacia el cierre de esta entrega se identifica: completar la recolección de campo (entrevistas y cuestionario ampliados) para validar con evidencia primaria los RNF-07 a RNF-15 y los RF-24 y RF-25 declarados como borrador; elaborar las figuras de los ocho diagramas UML y del modelado i* a partir de las especificaciones textuales de la Sección IV; completar la clasificación Kano y el puntaje WSJF con datos reales; implementar y desplegar el MVP; y registrar el protocolo experimental en OSF antes de iniciar la recolección de datos del componente empírico.
+El estado de cada elemento de esta entrega queda declarado sin ambigüedad: RNF-07, RNF-09, RNF-10, RNF-12, RNF-13 y RNF-15 quedan explícitamente marcados como no verificados con evidencia de campo (Tabla 39, Sección 3.3.2); RNF-08 y RNF-14 quedan como parcialmente sustentados; RNF-16 se incorpora como nuevo requisito, sustentado directamente en evidencia real (EV-15). RF-24 y RF-25 permanecen sustentados únicamente en análisis normativo LOPDP, sin confirmación de campo adicional en esta entrega. El certificado CITI no se incorpora por no estar aún disponible por parte del docente responsable; el Aval Institucional (Anexo E) permanece sin firma del docente. La clasificación Kano, el puntaje WSJF, el registro OSF, el modelado UML/i* completo (41 diagramas insertados) y el componente empírico (evaluación real de 3 jueces ciegos, análisis estadístico y $\kappa$ de Fleiss) ya cuentan con datos reales incorporados en esta versión. Queda para la Entrega 4 (2B): incorporar preguntas de validación de los umbrales aún no verificados, y migrar el manuscrito a la plantilla de la revista objetivo elegida.
 
 
 \section*{IX. REFERENCIAS}
@@ -1905,7 +2168,7 @@ Semana & Actividad & Entregable/Hito & Estado \\ \hline
 9-10 & Diagrama de contexto, CU general, 16 especificaciones textuales, clases conceptual. MoSCoW, trazabilidad. & Entrega 2 (1B) completa --- nota 9.70/10 & $\checkmark$ \\ \hline
 11 & Diseño experimental, registro de protocolo en OSF, elección de Enfoque 1. & Protocolo experimental registrado & En proceso \\ \hline
 12 & Segunda ronda de campo: entrevistas nuevas, cuestionario ampliado, guion general RF/RNF. & Nuevas EV, consentimientos LOPDP & En proceso \\ \hline
-13 & RF-24/RF-25, RNF-07 a RNF-15, requisitos legales, historias de usuario, ERS unificado en LaTeX. & Entrega 3 (2A) & En proceso \\ \hline
+13 & RF-24/RF-25, RNF-07 a RNF-16, requisitos legales, historias de usuario, ERS unificado en LaTeX. & Entrega 3 (2A) & Completado \\ \hline
 14-15 & Modelado UML completo (8 diagramas + i*), Kano, WSJF, MVP. & Diagramas, priorización, MVP & Pendiente \\ \hline
 16 & Análisis del componente empírico, dataset Zenodo. & Dataset con DOI & Pendiente \\ \hline
 17 & Entrega 4 (2B) y defensa final. & Manuscrito completo, defensa oral & Pendiente \\ \hline
@@ -1927,17 +2190,29 @@ Semana & Actividad & Entregable/Hito & Estado \\ \hline
 \hline
 ID-EV & Tipo & Fecha & Fuente / participante (rol) & Req. derivados & Consent. (S/N) \\ \hline
 EV-01 & Entrevista + Video & 14/05/2026 & Personal de Infraestructura y Mantenimiento (FCC-UTEQ) & RF-01, 08, 10, 13, 15, 16, 21, 22 & S \\ \hline
-EV-02 & Entrevista + Video & 30/06/2026 & Docente de la Facultad (FCC-UTEQ) & RF-04, 07, 09, 11, 12, 14, 17, 20, 23 & S \\ \hline
+EV-02 & Entrevista + Video & 30/06/2026 & Coordinación de la Carrera (FCC-UTEQ) --- COORD-01 & RF-04, 07, 09, 11, 12, 14, 17, 20, 23 & S \\ \hline
 EV-03 & Cuestionario digital & 01/07/2026 & Estudiantes de la Carrera de Software, FCC-UTEQ (9 respondientes; ampliación a $\geq$30 en 2A) & RF-04, RF-05, RF-07, RF-08, RF-11, RF-12, RF-22 & N/A \\ \hline
 EV-04 & Fotografías & 14/05 y 30/06/2026 & Sesiones de entrevista EV-01 y EV-02 - Equipo FGMMN & RF-01 a RF-05, RF-07, RF-08 & N/A \\ \hline
 EV-05 & Documento institucional & 02/07/2026 & Horario académico vigente de aulas o paralelos & RF-13, RF-15, RF-16, RF-20, RF-21; RD-13 & N/A \\ \hline
 EV-06 & Video AS-IS & 02/07/2026 & Proceso actual de mantenimiento físico de equipos en aulas & RF-08, RF-10, RF-11, RF-12, RF-17; RD-17 & N/A \\ \hline
 EV-07 & Documento institucional & 02/07/2026 & Evidencia del sistema de cámaras/videovigilancia & RF-06, RF-07, RF-22; RD-05 & N/A \\ \hline
+EV-08 & Entrevista + Video & 13/07/2026 & Personal de Conservación (FCC-UTEQ) --- CONS-02 & RF-07; RD-05; candidato de alerta ante manipulación de cámara & S \\ \hline
+EV-09 & Entrevista + Video & 13/07/2026 & Personal de Conservación (FCC-UTEQ) --- CONS-03 & RF-07 & S \\ \hline
+EV-10 & Entrevista + Video & 21/07/2026 & Coordinación de la Carrera (FCC-UTEQ) --- COORD-02 & RF-12, RF-15, RF-19; RD-13; candidato de SLA por prioridad & S \\ \hline
+EV-11 & Entrevista + Video & 22/07/2026 & Personal de Conservación (FCC-UTEQ) --- CONS-04 & RF-02, RF-05, RF-23; candidato de vista individual de aula & S \\ \hline
+EV-12 & Entrevista + Video & 24/07/2026 & Docente de la Facultad --- DOC-01 & RF-05, RF-08, RF-16 & S \\ \hline
+EV-13 & Entrevista + Video & 27/07/2026 & Docente de la Facultad --- DOC-02 & Candidatos: historial de correcciones por equipo; control de acceso a puertas; SLA de 24h & S \\ \hline
+EV-14 & Entrevista + Audio (sin video, a petición del participante) & 28/07/2026 & Coordinación de la Carrera (FCC-UTEQ) --- COORD-03 & RF-08, RF-12; RD-07, RD-15 & S \\ \hline
+EV-15 & Entrevista + Audio (sin video, a petición del participante) & 29/07/2026 & Docente de la Facultad --- DOC-03 & RF-23; RNF-04; RD-09; candidatos: modo degradado sin conectividad, catálogo de incidencias ampliado, foto adjunta en reporte & S (walkthrough asociado WT-03 sin consentimiento --- invalidado, no se usa como evidencia) \\ \hline
+EV-16 & Entrevista + Video & 30/07/2026 & Docente de la Facultad --- DOC-04 & RF-12; RNF-04; candidato de inventario de equipos de laboratorio & S \\ \hline
+EV-17 & Cuestionario digital v2.0 & 2A (cierre de recolección, fecha exacta en registro de Google Forms) & Estudiantes de la Carrera de Software, FCC-UTEQ (31 respondientes, sin datos identificables) & Kano (RF-05, RF-07, RF-08); WSJF & N/A \\ \hline
+EV-18 & Fotografías de entorno & 2A (segunda ronda) & Instalaciones y aulas de la FCC-UTEQ --- Equipo FGMMN (8 de 15 mínimo, ampliación en curso) & Evidencia de contexto físico & N/A \\ \hline
+EV-19 & Fotografías de aplicación del cuestionario & 2A & Sesiones de aplicación de EV-17, rostros difuminados donde correspondía --- Equipo FGMMN (5/5) & Evidencia de aplicación & N/A \\ \hline
 \caption{Registro/catálogo de evidencias}
 \end{longtable}
 \endgroup
 
-Las nuevas evidencias de campo (EV-08 en adelante), correspondientes a las entrevistas con Coordinadores, Conserjes, Docentes adicionales y Personal Administrativo, se incorporan a este catálogo conforme se completa su codificación temática.
+Las evidencias EV-08 a EV-19 corresponden a la segunda ronda de campo (Entrega 2A): 9 entrevistas nuevas con Coordinación de Carrera, Personal de Conservación y Docentes adicionales (EV-08 a EV-16, todas con codificación temática completa --- ver Sección de Codificación Temática y \texttt{02\_Evidencias/Codificacion\_Tematica/codificacion\_tematica.csv}), el cuestionario v2.0 reiniciado (EV-17) y las fotografías de entorno y de aplicación (EV-18, EV-19). El consentimiento de EV-15 (DOC-03) cubre la entrevista pero no el walkthrough asociado (WT-03), que queda invalidado y no se usa como evidencia, conforme a lo resuelto con el docente.
 
 
 \subsubsection*{B.2 a B.6 --- Guías, actas, cuestionario, observación y consentimientos}
@@ -1972,4 +2247,10 @@ Ver Sección 5.5 de este documento y el archivo 04\_Trazabilidad/matriz\_trazabi
 https://github.com/gsanchezc6-beep/SIGA\_FGMMN\_ISR401\_AVANCE\_2A.git
 
 
-El repositorio sigue la jerarquía de carpetas establecida para la Entrega 3 (2A): 01\_ERS/ a 08\_Borradores/, con los archivos raíz obligatorios (README.md, LICENSE, CITATION.cff, CHANGELOG.md, .gitignore, checksums.sha256) y Git LFS configurado para la evidencia multimedia.
+El repositorio sigue la jerarquía de carpetas establecida para la Entrega 3 (2A): 01\_ERS/ a 08\_Etica/, con los archivos raíz obligatorios (README.md, LICENSE, CITATION.cff, CHANGELOG.md, .gitignore, checksums.sha256).
+
+\textbf{Zonas de evidencia [P]/[R] (actualización conforme a la guía vigente).} Toda la evidencia reside dentro del repositorio, organizada en dos zonas: \textbf{zona pública [P]} (transcripciones anonimizadas, copias de consentimientos con cédula y firma enmascaradas, fotografías sin rostros identificables y sin coordenadas GPS, documentos de la organización anonimizados, actas de validación enmascaradas, codificación temática, fichas técnicas de cada archivo multimedia) y \textbf{zona restringida [R]} (consentimientos originales, videos y audios sin anonimizar, actas con firma visible, documentos originales de la organización), almacenada en \texttt{02\_Evidencias/00\_Restringido/} como contenedor cifrado con AES-256, cuya contraseña se entrega únicamente al docente por el canal institucional (nunca dentro del repositorio ni del README). El hash SHA-256 de cada archivo se calcula antes del cifrado y se registra en \texttt{checksums.sha256} junto con la ficha técnica pública, permitiendo al docente verificar la integridad de la evidencia sin que esta quede expuesta públicamente.
+
+\textbf{Nomenclatura de archivos.} Todo archivo multimedia usa el código de participante (por ejemplo \texttt{DOC-01}, \texttt{CONS-02}, \texttt{COORD-03}) en lugar del nombre real, de modo que ni el contenido ni el nombre del archivo constituyan un dato identificable fuera de la zona restringida.
+
+La carpeta \texttt{08\_Etica/} contiene el paquete ético completo (documentos A.1 a A.13 del Anexo A, subcarpeta específica de Categoría B, y \texttt{Adenda\_Segunda\_Ronda.pdf}), cuya vigencia es condición de admisión conforme al gatekeeper G8 de la guía.
